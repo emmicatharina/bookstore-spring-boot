@@ -3,6 +3,7 @@
 <head>
     <title>Add a new book</title>
     <meta http-equiv="Content-Type" content="txt/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" />
 </head>
 <body>
 <div class="container">
@@ -18,7 +19,7 @@
         <input type="text" id="isbn" th:field="*{isbn}" />
         <label for="price">Price</label>
         <input type="text" id="price" th:field="*{price}" />
-        <input type="submit" value="Save"></input>
+        <input class="btn btn-success" type="submit" value="Save"></input>
     </form>
 </div>
 </body>
